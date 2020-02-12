@@ -31,6 +31,7 @@
  }
 
  .container {
+  width: 75%;
   margin: 20px auto;
  }
 
@@ -44,7 +45,11 @@
 }
 
 .img-circle {
-  border-radius: 50%;
+  border-radius: 4px;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+
 }
 
 #btn-blue {
@@ -60,6 +65,9 @@
   color: white;
 }
 
+.banner {
+  background-image: url('images/banner.jpeg')
+}
 
 h1 h2 {
   font-family: "Roboto";

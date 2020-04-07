@@ -3,10 +3,11 @@
 
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/banner.jpeg');
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/banner.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100vw;
   height: 100vh;
   margin-top: 0;
   display: flex;
@@ -16,28 +17,35 @@
 .banner-infos {
   color: white;
 }
-.banner-infos a {
-  color: white;
+.banner-infos > h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
 }
+.banner-infos > p {
+  font-weight: 400;
+}
+
+
 
 body {
-background-color: #FFFFFF;
-font-family: "Open Sans", sans-serif;
-font-weight: 300;
-color: #A61B1B;
-font-size: 16px;
-line-height: 1.6;
-margin: 0;
-padding: 0;
+  background-color: #FCFCFC;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-width: 75%;
-margin: 20px auto;
+.main-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-about {
-  background-color: white;
   padding: 20px;
   // box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
   // border-radius: 5px;
@@ -50,66 +58,100 @@ margin: 20px auto;
   object-fit: cover;
   width: 150px;
   height: 150px;
+}
 
+.img-carousel {
+  width: 80vw;
+  object-fit: fill;
+}
+
+.img-skills {
+  height: 3rem;
+  margin: 1rem;
+}
+
+.fa-youtube {
+  color: #FF0100;
+}
+.github {
+  color: #000000;
+}
+.linkedin {
+  color: #017BB6;
+}
+.envelope {
+  color: #000000;
 }
 
 
 h1 h2 {
-font-family: "Roboto";
+  font-family: "Roboto";
 }
 
 h1 {
-font-weight: 700;
-font-size: 30px;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 h2 {
-font-weight: 400;
-font-size: 18px;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 p {
-font-weight: 300;
+  font-weight: 300;
 }
 
 i {
-width: 50px;
-font-size: 30px;
+  font-size: 1.5rem;
+  color: #FFFFFF;
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.8
 }
 
 ul {
-list-style: none;
-padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 li {
-display: inline-block;
+  display: inline-block;
 }
 
 a:hover {
-color: #A61B1B;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 1;
 }
 /*Responsiveness*/
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
+  .main-container {
+    width: 100vw;
+    min-width: fit-content;
   }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-
+  .main-container {
+    width: 100vw;
+    min-width: fit-content;
+  }
+  #achievements {
+    flex-direction: column;
   }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 400px;
+  .main-container {
+    width: 100vw;
+    min-width: fit-content;
+  }
+  #achievements {
+    flex-direction: column;
   }
 }

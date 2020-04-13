@@ -24,6 +24,10 @@
 .banner-infos > p {
   font-weight: 400;
 }
+.logo > img {
+  width: 15rem;
+  margin: 0 auto;
+}
 
 
 

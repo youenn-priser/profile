@@ -57,8 +57,8 @@ body {
 .img-rounded {
   border-radius: 50%;
   object-fit: cover;
-  width: 150px;
-  height: 150px;
+  width: 10rem;
+  height: 10rem;
 }
 
 .img-carousel {
